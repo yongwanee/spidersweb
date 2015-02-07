@@ -8,8 +8,6 @@
 
 - [Download](https://github.com/markquery/spidersweb/releases)  the zip file.
 
->  https://github.com/markquery/spidersweb/releases
-
 - Git
 
 > git clone https://github.com/markquery/spidersweb.git  
@@ -35,7 +33,7 @@
 
 ## friends
 
-`Typhoon` `5penwater` `Nightowlkr` `이바구`  `TommyMax` `EagleK` `정재복` `DivaGuskA` `미도` `success` `쫄이` `songjeyoon` `bluenlive`
+`Typhoon` `5penwater` `Nightowlkr` `이바구`  `TommyMax` `EagleK` `정재복` `papam` `Dreaming Dean` `티몰스` `신난제이유` `일진언니` `DivaGuskA` `미도` `success` `쫄이` `songjeyoon` `bluenlive`
 
 and countless friends.
 
