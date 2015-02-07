@@ -12,7 +12,7 @@ module.exports = function(grunt) {
   '<%= pkg.source %>/js/plugins/iscroll-lite.js',
   '<%= pkg.source %>/js/plugins/jquery.drawer.js',
   '<%= pkg.source %>/js/plugins/jquery.rss.js',
-  '<%= pkg.source %>/js/plugins/store.js',
+  '<%= pkg.source %>/js/plugins/store.min.js',
   '<%= pkg.source %>/js/plugins/jquery.userfont.js',
   '<%= pkg.source %>/js/scripts.js'
   ];
