@@ -8,7 +8,7 @@
 
 - [Download](https://github.com/markquery/spidersweb/releases)  the zip file.
 
-  https://github.com/markquery/spidersweb/releases
+>  https://github.com/markquery/spidersweb/releases
 
 - Git
 
@@ -18,14 +18,14 @@
 
 ### grunt task
 
-- grunt test
-- grunt dev
-- grunt build
-- grunt (default, watch)
+  $ grunt test
+  $ grunt dev
+  $ grunt build
+  $ grunt (default, watch)
 
 ## Live Demo
 
-- Spider's Web [http://spidersweb.tistory.com/](http://spidersweb.tistory.com/)
+> [http://spidersweb.tistory.com/](http://spidersweb.tistory.com/)
 
 ## Credit and contributor
 
