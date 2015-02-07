@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>마크쿼리 - Spider's Web</name>
+		<version>4.0.0</version>
+		<description>
+			<![CDATA[마크쿼리 - Spider's Web]]>
+		</description>
+		<license>
+			<![CDATA[http://markquery.com/license]]>
+		</license>
+		<tags>
+			<tag>마크쿼리</tag> <tag>markquery</tag> <tag>HTML5</tag> <tag>CSS</tag>
+		</tags>
+	</information>
+<author>
+		<name>Ungki, H</name>
+		<homepage>http://markquery.com</homepage>
+		<email>ungki.h@gmail.com</email>
+	</author>
+	<default>
+		<recentEntries>5</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>10</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<expandTrackback>1</expandTrackback>
+		<lengthOfRecentNotice>25</lengthOfRecentNotice>
+		<lengthOfRecentEntry>27</lengthOfRecentEntry>
+		<lengthOfRecentComment>30</lengthOfRecentComment>
+		<lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+	</default>
+</skin>

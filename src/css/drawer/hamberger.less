@@ -1,0 +1,91 @@
+.drawer-header {
+  button {
+    border: 0;
+    background: 0;
+  }
+  .drawer-banner {
+    position: static;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 900;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    a {
+      color: #222;
+      text-decoration: none;
+      &:hover {
+        color: #222;
+      }
+    }
+  }
+  .drawer-banner-title {
+    margin-right: -46px;
+  }
+  .drawer-banner-search {
+    float: right;
+    margin: 12px 10px 10px;
+    border: 1px solid #fbfbfb;
+    border-radius: 50px;
+  }
+}
+.drawer-hamberger {
+  position: fixed;
+  display: block;
+  top: 0;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 0;
+  z-index: @drawer-toggle-zIndex;
+  outline: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.drawer-hamberger-icon {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  &,
+  &:before,
+  &:after {
+    height: 3px;
+    width: 100%;
+    border-radius: 1px;
+    background-color: @drawer-hamberger-bg-color;
+    transition: all @drawer-duration @drawer-ease;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    content: " ";
+    top: -10px;
+    left: 0;
+  }
+  &:after {
+    top: 10px;
+  }
+  & {
+    .drawer-open & {
+      background-color: transparent;
+    }
+  }
+  &:before,
+  &:after {
+    .drawer-open & {
+      top: 0;
+    }
+  }
+  &:before {
+    .drawer-open & {
+      transform: rotate(45deg);
+    }
+  }
+  &:after {
+    .drawer-open & {
+      transform: rotate(-45deg);
+    }
+  }
+}

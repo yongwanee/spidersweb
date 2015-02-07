@@ -1,0 +1,19 @@
+// link marked.js
+<script src="./images/marked.min.js"></script>
+
+// Markdown Javascript options
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: true,
+  smartLists: true,
+  smartypants: false
+});
+var getMarkdown = document.getElementById('marked');
+if(getMarkdown) {
+  var setMarkdown = getMarkdown.innerText ? getMarkdown.innerText : getMarkdown.textContent;
+  $(".entry-markdown").html(marked(setMarkdown));
+};

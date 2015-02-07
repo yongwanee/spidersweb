@@ -1,0 +1,75 @@
+// main
+// ======================================
+body.drawer-navbar.drawer-fixed {
+  padding-top: 0;
+}
+.drawer-main {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: @drawer-width-phone;
+  height: 100%;
+  .drawer-left & {
+    z-index: 0;
+    left: -@drawer-width-phone;
+    transition: transform @drawer-duration @drawer-ease;
+    transform: translate3d(-@drawer-width-phone, 0px, 0px);
+  }
+  .drawer-left.drawer-open & {
+    z-index: @drawer-main-zIndex;
+    left: 0;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  .drawer-right & {
+    z-index: 0;
+    right: -@drawer-width-phone;
+    transition: transform @drawer-duration @drawer-ease;
+    transform: translate3d(@drawer-width-phone, 0px, 0px);
+  }
+  .drawer-right.drawer-open & {
+    z-index: @drawer-main-zIndex;
+    right: 0;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+// overlay
+// ======================================
+.drawer-overlay {
+  position: relative;
+}
+
+// hamberger
+// ======================================
+.drawer-left .drawer-hamberger {
+  left: 0;
+  transform: translateX(0px) translateY(0px);
+}
+.drawer-left.drawer-open .drawer-hamberger {
+  transform: translateX(@drawer-width-phone) translateY(0px);
+}
+.drawer-right .drawer-hamberger {
+  right: 0;
+  transform: translateX(0px) translateY(0px);
+}
+.drawer-right.drawer-open .drawer-hamberger {
+  transform: translateX(-@drawer-width-phone) translateY(0px);
+}
+
+// upper
+// ======================================
+.drawer-overlay-upper {
+  position: fixed;
+  z-index: @drawer-upper-zIndex;
+  top: 0;
+  height: 100%;
+  display: none;
+  background-color: rgb(0,0,0,.5);
+  background-color: rgba(0,0,0,.5);
+  .drawer-left.drawer-open & {
+    right: 0;
+  }
+  .drawer-right.drawer-open & {
+    left: 0;
+  }
+}

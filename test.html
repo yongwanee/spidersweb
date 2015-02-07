@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="ko" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="ko" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="ko" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ko" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="author" content="[##_blogger_##]">
+	<meta name="generator" content="markquery">
+	<meta name="description" content="[##_desc_##]">
+	<title>[##_page_title_##] [##_title_##]</title>
+	<link rel="profile" href="http://microformats.org/profile/hcard">
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
+	<link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72"  href="./images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./images/apple-touch-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="./images/msapplication-114x114.png">
+	<meta name="msapplication-TileColor" content="#222222">
+	<link rel="stylesheet" href="./style.css?ver=4.0.0">
+		<!--[if lt IE 9]>
+		<script async src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<link href="./images/ie.min.css?ver=4.0.0" rel="stylesheet">
+		<![endif]-->
+</head>
+<body class="drawer drawer-left drawer-navbar drawer-fixed">
+<s_t3>
+<div class="animsition" data-animsition-in="fade-in" data-animsition-out="fade-out">
+<a class="sr-only sr-only-focusable" href="#content" tabindex="10">본문 바로가기</a>
+<a class="sr-only sr-only-focusable" href="#navigation" tabindex="11">내비게이션 바로가기</a>
+<a class="sr-only sr-only-focusable" href="#categories" tabindex="12">카테고리 바로가기</a>
+
+<header role="banner" id="navigation" class="tab-access" tabindex="-1">
+	<div class="drawer-header">
+		<button type="button" class="drawer-toggle drawer-hamberger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamberger-icon"></span>
+		</button>
+		<div class="drawer-banner">
+			<a class="drawer-banner-title" href="[##_blog_link_##]">[##_title_##]</a> <a class="drawer-banner-search drawer-form-btn" href="[##_blog_link_##]search"><span class="sr-only">search</span></a>
+		</div>
+	</div>
+	<div class="drawer-main drawer-navbar-default">
+		<nav class="container drawer-nav" role="navigation">
+			<div class="drawer-brand"><a href="[##_blog_link_##]" rel="home">[##_title_##]</a></div>
+			<ul class="drawer-menu">
+				<li class="drawer-menu-item"><a href="/category">Archives</a></li>
+				<li class="drawer-menu-item"><a href="/tag">Tags</a></li>
+				<li class="drawer-menu-item"><a href="/guestbook">Guestbook</a></li>
+				<li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">admin <span class="caret"></span></a>
+					<ul class="drawer-submenu dropdown-menu" role="menu">
+						<li class="drawer-submenu-item"><a href="/admin">관리자</a></li>
+						<li class="drawer-submenu-item"><a href="/admin/entry/post">글쓰기</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form action="javascript:searchURL()" class="drawer-form drawer-form-right" role="search">
+				<label class="sr-only">search</label>
+				<div class="drawer-input-group">
+				<input type="text" class="drawer-input" name="q" placeholder="Search" aria-label="Search" required="required" tabindex="1">
+				</div>
+				<button type="submit" name="sa" value="검색" class="drawer-form-btn"><span class="sr-only">검색</span></button>
+			</form>
+			<div class="drawer-footer"><span></span></div>
+		</nav>
+	</div>
+</header>
+
+<!-- Content
+================================================== -->
+<div class="drawer-overlay">
+<div class="container skeleton" role="document"><!-- site layout : container -->
+
+<!-- Cover
+================================================== -->
+<div class="row col-nospace cover">
+	<div class="col-sm-12">
+		<!--
+		<figure>
+			<img class="cover-figure-img" src="./images/cover-black.png" alt="cover">
+			<figcaption class="cover-figcaption">[##_desc_##]</figcaption>
+		</figure>
+		-->
+		<div id="coverCarousel" class="cover_carousel slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#coverCarousel" data-slide-to="0" class="active"></li><!-- 1st image indicator -->
+			<li data-target="#coverCarousel" data-slide-to="1"></li><!-- 2nd image indicator-->
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="item active"><a href="#"><img class="img-responsive" src="./images/cover-black.png" alt="cover-black"></a></div><!-- first image -->
+			<div class="item"><a href="#"><img class="img-responsive" src="./images/cover-gray.png" alt="cover-gray"></a><!-- 2nd image --></div>
+		</div><!-- carousel-inner -->
+		</div><!-- #coverCarousel -->
+	</div>
+</div>
+
+<!-- Main - hentry
+================================================== -->
+<main role="main" class="main">
+<div class="row col-nospace"><!-- site layout : row -->
+<article role="article" class="col-sm-8 hentry"><!-- site layout : article column -->
+
+<!-- Search Page
+================================================== -->
+<s_list>
+<div class="search">
+	<h1 id="content" class="js-tab-access" tabindex="-1">'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</h1>
+	<form action="javascript:searchPage()">
+		<fieldset>
+			<legend>검색</legend>
+			<input type="text" name="searchPage-q" accesskey="s" placeholder="검색어 입력" class="input-search" aria-label="Search" required="required">
+			<input type="submit" name="sa" value="검색" class="input-submit">
+		</fieldset>
+	</form>
+	<ol>
+	<s_list_rep>
+		<li>
+			<time class="updated" datetime="[##_list_rep_regdate_##]">[##_list_rep_regdate_##]</time>
+			<a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+			<span class="cnt">[##_list_rep_rp_cnt_##]</span>
+		</li>
+	</s_list_rep>
+	</ol>
+</div>
+<!-- search-result with HTML5 Markup -->
+<div class="third-party">
+	<div id="search-result"></div>
+</div>
+
+<div class="entry-footer-ad">
+<!-- 스파이더스웹 가로 반응형 -->
+<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-xxxxx"
+		data-ad-slot="xxxxx"
+		data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</s_list>
+
+<s_rplist>
+<div class="search">
+	<h1 id="content" class="js-tab-access" tabindex="-1">'[##_rplist_conform_##]'에 해당되는 댓글 [##_rplist_count_##]건</h1>
+		<ol>
+			<s_rplist_rep>
+			<li>
+				<time class="updated" datetime="[##_rplist_rep_regdate_##]">[##_rplist_rep_regdate_##]</time>
+				<a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##]</a>
+				<span class="cnt">[##_rplist_rep_rp_cnt_##]</span>
+				<span class="name">[##_rplist_rep_name_##]</span>
+			</li>
+			</s_rplist_rep>
+		</ol>
+</div>
+<div class="entry-footer-ad">
+<!-- 스파이더스웹 가로 반응형 -->
+<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-xxxxx"
+		data-ad-slot="xxxxx"
+		data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</s_rplist>
+
+<!-- Local Page
+================================================== -->
+<s_local>
+<div class="localog" >
+	<h1 id="content" class="js-tab-access" tabindex="-1">Localog</h1>
+	<s_local_spot_rep>
+	<div class="spot" style="margin-left: [##_local_spot_depth_##]px; padding: 0 15px;">[##_local_spot_##]</div>
+	</s_local_spot_rep>
+	<s_local_info_rep>
+	<div class="info" style="margin-left: [##_local_info_depth_##]px; padding: 0 15px;"><a href="[##_local_info_link_##]">[##_local_info_title_##]</a></div>
+	</s_local_info_rep>
+</div>
+<div class="entry-footer-ad">
+<!-- 스파이더스웹 가로 반응형 -->
+<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-xxxxx"
+		data-ad-slot="xxxxx"
+		data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</s_local>
+
+<!-- Tag
+================================================== -->
+<s_tag>
+<div class="taglog">
+	<h1 id="content" class="js-tab-access" tabindex="-1">Tags</h1>
+	<ul>
+		<s_tag_rep>
+		<li><a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li>
+		</s_tag_rep>
+	</ul>
+</div>
+<div class="entry-footer-ad">
+<!-- 스파이더스웹 가로 반응형 -->
+<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-xxxxx"
+		data-ad-slot="xxxxx"
+		data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</s_tag>
+
+<!-- Media
+================================================== -->
+<s_media>
+<div class="medialog">
+	<h1 id="content" class="js-tab-access" tabindex="-1">Medialog</h1>
+	[##_media_content_##]
+</div>
+<div class="entry-footer-ad">
+<!-- 스파이더스웹 가로 반응형 -->
+<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-xxxxx"
+		data-ad-slot="xxxxx"
+		data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</s_media>
+
+<!-- Guestbook
+================================================== -->
+<s_guest>
+<div class="guestbook typography">
+	<h1 id="content" class="js-tab-access" tabindex="-1">Guestbook</h1>
+	<s_guest_input_form>
+		<s_guest_member>
+			<s_guest_form>
+				<div class="guestbook-form">
+					<label for="inputNAME">NAME</label>
+					<input type="text" id="inputNAME" name="[##_guest_input_name_##]" value="[##_guest_name_##]">
+					<label for="inputPW">PASSWORD</label>
+					<input type="password" maxlength="10" id="inputPW" name="[##_guest_input_password_##]" value="[##_guest_password_##]">
+					<label for="inputURL">URL</label>
+					<input type="url" id="inputURL" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]">
+				</div>
+			</s_guest_form>
+		</s_guest_member>
+				<div class="checkbox">
+					<label for="secret"><input type="checkbox" id="secret" name="secret"><strong>Secret</strong></label>
+				</div>
+				<div class="guestbook-form">
+					<textarea name="[##_guest_textarea_body_##]" rows="3"></textarea>
+					<button type="submit" value="Submit Comment" onclick="[##_guest_onclick_submit_##]">Submit Comment</button>
+				</div>
+	</s_guest_input_form>
+
+	<s_guest_container>
+	<hr>
+	<ol>
+		<s_guest_rep>
+		<li id='[##_guest_rep_id_##]'>
+		<div class="[##_guest_rep_class_##]">
+			<p class="comment-header"><span class="name">[##_guest_rep_name_##]</span> <a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></p>
+			<time class="updated" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
+			<p class="comment-body">[##_guest_rep_desc_##]</p>
+		</div><!-- Guestbook : rep_class -->
+
+			<div class="reply">
+				<s_guest_reply_container>
+					<ol>
+						<s_guest_reply_rep>
+							<li id='[##_guest_rep_id_##]'>
+								<div class="[##_guest_rep_class_##]">
+									<p class="comment-header">Reply: <span class="name">[##_guest_rep_name_##]</span> <a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></p>
+									<time class="updated" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
+									<p class="comment-body">[##_guest_rep_desc_##]</p>
+								</div><!-- Guestbook : rep_class -->
+							</li>
+						</s_guest_reply_rep>
+					</ol>
+				</s_guest_reply_container>
+			</div><!-- Guestbook : reply -->
+		</li>
+		</s_guest_rep>
+	</ol>
+	</s_guest_container>
+
+	<div class="entry-footer-ad">
+	<!-- 스파이더스웹 가로 반응형 -->
+	<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-xxxxx"
+			data-ad-slot="xxxxx"
+			data-ad-format="horizontal"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+</div>
+</s_guest>
+
+<!-- Notice
+================================================== -->
+<s_notice_rep>
+<div class="typography">
+	<header class="entry-header">
+		<h1 id="content" class="entry-title js-tab-access" tabindex="-1"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
+		<div class="row row-nospace">
+			<div class="col-md-9">
+			<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+			<p class="byline author vcard">Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="fn">[##_article_rep_author_##]</span></p>
+			</div>
+			<div class="col-md-3">
+				<div class="button-group font-group">
+					<button class="dropdown-toggle button font-button" type="button" role="button" aria-expanded="false" id="dropdownFontMenu" data-toggle="dropdown"><span class="sr-only">Toggle Dropdown</span>글꼴</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownFontMenu">
+						<li><a href="#"><span class="fontfamily" data-fontfamily="'맑은 고딕', 'malgun gothic'">맑은 고딕</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="나눔바른고딕, 'NanumBarunGothic'">나눔바른고딕</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="나눔고딕, 'Nanum Gothic'">나눔고딕</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="다음_Regular, daum_Regular">다음</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="굴림, gulim">굴림</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="돋움, dotum">돋움</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="바탕, batang">바탕</span></a></li>
+						<li class="divider"></li>
+						<li><a class="font-help" href="http://markquery.com/docs/web-font/" target="_blank">Web Font</a></li>
+					</ul>
+					<button  class="fontsize-decrease button minus-button" title="Decrease font size">-</button>
+					<button  class="fontsize-increase button plus-button" title="Increase font size">+</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="entry-content js-user-font">
+	[##_notice_rep_desc_##]
+	</div>
+
+	<div class="entry-footer-ad">
+	<!-- 스파이더스웹 가로 반응형 -->
+	<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-xxxxx"
+			data-ad-slot="xxxxx"
+			data-ad-format="horizontal"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+</div><!-- /.typography -->
+</s_notice_rep>
+
+<!-- Protected
+================================================== -->
+<s_article_protected>
+<div class="typography">
+	<header class="entry-header">
+		<h1 id="content" class="entry-title js-tab-access" tabindex="-1"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
+		<div class="row row-nospace">
+			<div class="col-md-9">
+			<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+			<p class="byline author vcard">Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>  by <span class="fn">[##_article_rep_author_##]</span></p>
+		</div>
+			<div class="col-md-3">
+				<div class="button-group font-group">
+					<button class="dropdown-toggle button font-button" type="button" role="button" aria-expanded="false" id="dropdownFontMenu" data-toggle="dropdown"><span class="sr-only">Toggle Dropdown</span>글꼴</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownFontMenu">
+						<li><a href="#"><span class="fontfamily" data-fontfamily="'맑은 고딕', 'malgun gothic'">맑은 고딕</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="나눔바른고딕, 'NanumBarunGothic'">나눔바른고딕</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="나눔고딕, 'Nanum Gothic'">나눔고딕</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="다음_Regular, daum_Regular">다음</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="굴림, gulim">굴림</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="돋움, dotum">돋움</span></a></li>
+						<li><a href="#"><span class="fontfamily" data-fontfamily="바탕, batang">바탕</span></a></li>
+						<li class="divider"></li>
+						<li><a class="font-help" href="http://markquery.com/docs/web-font/" target="_blank">Web Font</a></li>
+					</ul>
+					<button class="fontsize-decrease button minus-button" title="Decrease font size">-</button>
+					<button class="fontsize-increase button plus-button" title="Increase font size">+</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="entry-content js-user-font">
+		<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+		<p><label for="[##_article_password_##]">비밀번호 ::</label>
+			<input type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]">
+			<input type="button" class="btn" value="submit" onclick="[##_article_dissolve_##]" >
+		</p>
+	</div>
+
+	<div class="entry-footer-ad">
+	<!-- 스파이더스웹 가로 반응형 -->
+	<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-xxxxx"
+			data-ad-slot="xxxxx"
+			data-ad-format="horizontal"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+</div><!-- /.typography -->
+</s_article_protected>
+
+<!-- Entry
+================================================== -->
+<s_article_rep>
+<div class="typography">
+
+<!-- Entry : header
+================================================== -->
+<header class="entry-header">
+	<h1 id="content" class="entry-title js-tab-access" tabindex="-1"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
+	<div class="row row-nospace">
+		<div class="col-md-9">
+			<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+			<p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> by <span class="fn">[##_article_rep_author_##]</span></p>
+		</div>
+		<div class="col-md-3">
+			<div class="drawer-nav button-group font-group">
+				<button class="dropdown-toggle button font-button" type="button" role="button" aria-expanded="false" id="dropdownFontMenu" data-toggle="dropdown"><span class="sr-only">Toggle Dropdown</span>글꼴</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownFontMenu">
+					<li><a href="#"><span class="fontfamily" data-fontfamily="'맑은 고딕', 'malgun gothic'">맑은 고딕</span></a></li>
+					<li><a href="#"><span class="fontfamily" data-fontfamily="나눔바른고딕, 'NanumBarunGothic'">나눔바른고딕</span></a></li>
+					<li><a href="#"><span class="fontfamily" data-fontfamily="나눔고딕, 'Nanum Gothic'">나눔고딕</span></a></li>
+					<li><a href="#"><span class="fontfamily" data-fontfamily="다음_Regular, daum_Regular">다음</span></a></li>
+					<li><a href="#"><span class="fontfamily" data-fontfamily="굴림, gulim">굴림</span></a></li>
+					<li><a href="#"><span class="fontfamily" data-fontfamily="돋움, dotum">돋움</span></a></li>
+					<li><a href="#"><span class="fontfamily" data-fontfamily="바탕, batang">바탕</span></a></li>
+					<li class="divider"></li>
+					<li><a class="font-help" href="http://markquery.com/docs/web-font/" target="_blank">Web Font</a></li>
+				</ul>
+				<button class="fontsize-decrease button minus-button" title="Decrease font size">-</button>
+				<button class="fontsize-increase button plus-button" title="Increase font size">+</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Entry : admin
+================================================== -->
+<s_ad_div>
+<div class="entry-admin fade in">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+</div>
+</s_ad_div>
+
+<!-- Entry : body
+================================================== -->
+<div class="entry-content js-user-font">
+[##_article_rep_desc_##]
+</div>
+
+<div class="entry-tags">
+<s_tag_label>[##_tag_label_rep_##]</s_tag_label>
+</div>
+
+<div class="entry-footer-ad">
+<!-- 스파이더스웹 가로 반응형 -->
+<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-xxxxx"
+		data-ad-slot="xxxxx"
+		data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<!-- Entry : footer -->
+<div class="entry-footer">
+<!-- Entry : footer : actionTrail
+================================================== -->
+<div class="actionTrail">
+	<p><a href="#tb" onclick="[##_article_rep_tb_link_##]">Trackback</a> <span class="cnt">[##_article_rep_tb_cnt_##]</span> : <a href="#rp" onclick="[##_article_rep_rp_link_##]">Comment</a> <span class="cnt"> [##_article_rep_rp_cnt_##]</span>
+	</p>
+</div>
+
+<!-- Entry : footer  : trackback
+================================================== -->
+	<s_tb>
+	<div class="trackback">
+		<p>[##_tb_address_##]</p>
+		<s_tb_container>
+		<ol>
+			<s_tb_rep>
+			<li id="[##_tb_rep_id_##]">
+				<p>Subject: <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></p>
+				<p>Tracked from <strong>[##_tb_rep_site_##]</strong> <time class="updated" datetime="[##_tb_rep_date_##]">[##_tb_rep_date_##]</time> <a href="#" onclick="[##_tb_rep_onclick_delete_##]; return false" >delete</a></p>
+				<p>[##_tb_rep_desc_##]</p>
+			</li>
+			</s_tb_rep>
+		</ol>
+		</s_tb_container>
+	</div>
+	</s_tb>
+
+<!-- Entry : footer  : comment
+================================================== -->
+	<s_rp>
+		<div class="comment">
+			<s_rp_container>
+			<ol>
+				<s_rp_rep>
+				<li id="[##_rp_rep_id_##]">
+					<div class="[##_rp_rep_class_##]">
+						<p class="comment-header"><span class="name">[##_rp_rep_name_##]</span> <a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></p>
+						<time class="updated" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+						<p class="comment-body">[##_rp_rep_desc_##]</p>
+					</div>
+
+						<div class="reply">
+						<s_rp2_container>
+							<ol>
+								<s_rp2_rep>
+								<li id="[##_rp_rep_id_##]">
+									<div class="[##_rp_rep_class_##]">
+										<p class="comment-header">Reply: <span class="name">[##_rp_rep_name_##]</span> <a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></p>
+										<time class="updated" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+										<p class="comment-body">[##_rp_rep_desc_##]</p>
+									</div>
+								</li>
+								</s_rp2_rep>
+							</ol>
+						</s_rp2_container>
+						</div><!-- Entry : footer : comment : reply -->
+				</li>
+				</s_rp_rep>
+			</ol>
+			</s_rp_container>
+
+<!-- Entry : footer  : comment form
+================================================== -->
+		<s_rp_input_form>
+			<h2>Leave a Reply</h2>
+			<s_rp_member>
+				<s_rp_guest>
+					<div class="comment-form">
+						<label for="inputNAME">NAME</label>
+						<input type="text" id="inputNAME" name="[##_rp_input_name_##]" value="[##_guest_name_##]" aria-required="true" title="이름 필수입력항목">
+						<label for="inputPW">PASSWORD</label>
+						<input type="password" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" aria-required="true" title="패스워드 필수입력항목">
+						<label for="inputURL">URL</label>
+						<input type="text" id="inputURL" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]" title="웹사이트 URL 선택입력항목">
+					</div>
+				</s_rp_guest>
+				<div class="checkbox">
+					<label for="secret"><input type="checkbox" name="[##_rp_input_is_secret_##]" title="비밀 댓글쓰기 선택입력항목"><strong>Secret</strong></label>
+				</div>
+			</s_rp_member>
+			<div class="comment-form">
+				<textarea name="[##_rp_input_comment_##]" rows="3"></textarea>
+				<button type="submit" value="Submit Comment" onclick="[##_rp_onclick_submit_##]">Submit Comment</button>
+			</div>
+		</s_rp_input_form>
+		</div><!-- Entry : footer : comment -->
+	</s_rp>
+</div><!-- Entry : footer -->
+
+</div><!-- /.typography -->
+</s_article_rep>
+
+<!-- Paging
+================================================== -->
+<s_paging>
+<div class="paging">
+	<ul class="pagination">
+		<li><a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">&laquo;</a></li>
+		<s_paging_rep>
+		<li><a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a></li>
+		</s_paging_rep>
+		<li><a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">&raquo;</a></li>
+	</ul>
+</div>
+</s_paging>
+
+</article><!-- site layout : /.article column -->
+
+<aside role="complementary" class="col-sm-4"><!-- site layout : aside column -->
+<s_sidebar>
+	<s_sidebar_element>
+	<!-- Catetories -->
+	<div class="widget">
+		<h3 id="categories" class="js-tab-access" tabindex="-1">Catetories</h3>
+			[##_category_list_##]
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Articles -->
+	<div class="widget">
+		<div class="widget-feed-inner">
+		<h3>Articles</h3>
+			<div class="js-widget-feed"></div>
+		</div>
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Article(default) -->
+	<div class="widget">
+		<h3>Articles(default)</h3>
+			<ul>
+				<s_rctps_rep>
+				<li>
+				<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]. <span class="cnt">[##_rctps_rep_rp_cnt_##]</span></a>
+				</li>
+				</s_rctps_rep>
+			</ul>
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Comments -->
+	<div class="widget">
+		<h3>Comments</h3>
+			<ul>
+				<s_rctrp_rep>
+				<li>
+				<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]. <span class="cnt">by [##_rctrp_rep_name_##]</span></a>
+				</li>
+				</s_rctrp_rep>
+			</ul>
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Trackbacks -->
+	<div class="widget">
+		<h3>Trackbacks</h3>
+			<ul>
+				<s_rcttb_rep>
+				<li>
+				<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].
+				<br>[##_rcttb_rep_name_##] <time datetime="[##_rcttb_rep_time_##]">[##_rcttb_rep_time_##]</time>
+				</a>
+				</li>
+				</s_rcttb_rep>
+			</ul>
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Notices -->
+	<s_rct_notice>
+	<div class="widget">
+		<h3>Notices</h3>
+			<ul>
+				<s_rct_notice_rep>
+				<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+				</s_rct_notice_rep>
+			</ul>
+	</div>
+	</s_rct_notice>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- tags -->
+	<div class="widget">
+		<div class="widget-inline-inner">
+			<h3>Tags</h3>
+				<ul>
+					<s_random_tags>
+					<li> <a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li>
+					</s_random_tags>
+				</ul>
+		</div>
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Links -->
+	<div class="widget">
+		<h3>Links</h3>
+			<ul>
+				<s_link_rep>
+				<li><a href="[##_link_url_##]">[##_link_site_##]</a></li>
+				</s_link_rep>
+			</ul>
+	</div>
+	</s_sidebar_element>
+
+	<s_sidebar_element>
+	<!-- Site Count -->
+	<div class="widget">
+		<h3>Count</h3>
+			<ul class="widget-inline">
+				<li>Total : [##_count_total_##]</li>
+				<li>Today : [##_count_today_##]</li>
+				<li>Yesterday : [##_count_yesterday_##]</li>
+			</ul>
+	</div>
+	</s_sidebar_element>
+</s_sidebar>
+</aside>
+</div>
+</main>
+</div><!-- /.container -->
+
+<footer role="contentinfo">
+<div class="container footer">
+	<div class="source-org vcard copyright">
+		<ul>
+			<li>Copyright &copy; 2015 <a class="org fn url" href="[##_blog_link_##]" target="_blank">[##_title_##]</a> All rights reserved.</li>
+			<li>Code Is Content by <a href="http://markquery.com/" target="_blank">마크쿼리</a> &middot; <a rel="license" href="http://markquery.com/license/" target="_blank">License</a></li>
+			<li>Powered by <a href="http://tistory.com/" target="_blank">Tistory</a></li>
+		</ul>
+	</div>
+</div>
+</footer>
+
+<div class="container build">
+	<div class="row col-nospace">
+		<div class="col-sm-12">
+		<a href="https://github.com/markquery/spidersweb/releases"><img src="https://img.shields.io/github/release/markquery/spidersweb.svg?style=flat-square" alt="Spider's Web release" /></a><a href="https://www.npmjs.com/package/spidersweb"><img src="https://img.shields.io/npm/v/spidersweb.svg?style=flat-square" alt="npm"></a><a href="https://travis-ci.org/markquery/spidersweb"><img src="https://img.shields.io/travis/markquery/spidersweb/master.svg?style=flat-square" alt="Build Status"></a><a href="https://david-dm.org/markquery/spidersweb#info=Dependencies"><img src="https://david-dm.org/blivesta/drawer.svg?style=flat-square" alt="Dependency Status"></a>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="./images/jquery-1.10.2.min.js"><\/script>')</script>
+<!-- JavaScript -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="./images/jquery.animsition.min.js"></script>
+<script type="text/javascript" src="./images/app.min.js?ver=4.0.0"></script>
+<script type="text/javascript" src="./images/marked.min.js"></script>
+<script type="text/javascript" src="./images/prism.js"></script>
+	<!--[if lt IE 9]>
+	<script src="./images/ie-row-fix.js"></script>
+	<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+var markqueryRSS = "[##_rss_url_##]";
+var customSearchID = "";
+
+var markquery = {
+	jReady: function() {
+		// animsition
+		$(".animsition").animsition();
+		// drawer
+		$(".drawer").drawer();
+		$(".drawer-dropdown-hover").hover(function(){
+			$('[data-toggle="dropdown"]', this).trigger('click');
+		});
+		// cover carousel
+		$(".cover_carousel").carousel({interval: 6000});
+		$("#coverCarousel").swiperight(function() {
+			$(this).carousel('prev');
+		});
+		$("#coverCarousel").swipeleft(function() {
+			$(this).carousel('next');
+		});
+	},
+	jsLoad: function() {
+		// Feed javascript options
+		$(".js-widget-feed").rss(markqueryRSS, {
+			limit: 5,
+			thumbnailSize: "C60x60",
+			imageAlt: "featured",
+			layoutTemplate: '<ul class="media-list">{entries}</ul>',
+			entryTemplate: '<li class="media"><a class="pull-left" href="{url}"><img class="media-object media-thumbnail" src="{featuredImageUrl}" alt="{featuredImageAlt}" /></a><div class="media-body"><h4><a href="{url}">{title}</a></h4><small>{kdate}</small></div></li>'
+		});
+		// userFont options
+		$(".js-user-font").userFont({
+			store: true,
+			userFontFamily: true,
+			startFontFamily: "malgun gothic"
+		});
+	}
+};
+
+$(document).ready(function() {
+	markquery.jReady();
+});
+$(window).load(function(){
+	markquery.jsLoad();
+});
+
+// Utility
+var splitURL = window.location.host + window.location.pathname;
+var pathArray = splitURL.split( '/' );
+if(pathArray[1] == "") {
+	$(".cover").addClass("cover-init");
+	$(".build").addClass("build-init");
+};
+
+// Google Custom Search URL
+function searchURL(){ window.location.href = '/search/' + looseURIEncode(document.getElementsByName('q')[0].value) + '?cx=' + customSearchID + '&cof=FORID%3A11&q=' + looseURIEncode(document.getElementsByName('q')[0].value);};
+
+function searchPage(){ window.location.href = '/search/' + looseURIEncode(document.getElementsByName('searchPage-q')[0].value) + '?cx=' + customSearchID + '&cof=FORID%3A11&q=' + looseURIEncode(document.getElementsByName('searchPage-q')[0].value);};
+
+// Google Custom Search API For HTML5
+var myCallback = function() {
+	if (document.readyState != 'complete') {
+			if (navigator.userAgent.toLowerCase().indexOf('msie') > 0)
+				jQuery(document).ready(iehandler);
+		else {
+			google.setOnLoadCallback(function() {
+				google.search.cse.element.render(
+				{
+					div: "search-result",
+					tag: 'search'
+				});
+			}, true);
+		}
+	}
+};
+function iehandler(jQuery) {
+	google.search.cse.element.render(
+		{
+			div: "search-result",
+			tag: 'search'
+		});
+};
+window.__gcse = {
+	parsetags: 'explicit',
+	callback: myCallback
+};
+(function() {
+	var cx = customSearchID;
+	var gcse = document.createElement('script'); gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+
+// Markdown Javascript options
+marked.setOptions({
+	renderer: new marked.Renderer(),
+	gfm: true,
+	tables: true,
+	breaks: false,
+	pedantic: false,
+	sanitize: true,
+	smartLists: true,
+	smartypants: false
+});
+var getMarkdown = document.getElementById('marked');
+if(getMarkdown) {
+	var setMarkdown = getMarkdown.innerText ? getMarkdown.innerText : getMarkdown.textContent;
+	$(".entry-markdown").html(marked(setMarkdown));
+};
+
+// Google Analytics: change UA-XXXXX-X to be your site's ID
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-XXXXX-x', 'auto');
+	ga('send', 'pageview');
+//]]>
+</script>
+</div><!-- /.drawer-overlay -->
+</div><!-- /.animsition -->
+</s_t3>
+</body>
+</html>

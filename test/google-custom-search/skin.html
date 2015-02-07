@@ -1,0 +1,40 @@
+<!-- search-result with HTML5 Markup -->
+<div class="third-party">
+  <div id="search-result"></div>
+</div>
+
+// Google Custom Search API For HTML5
+var myCallback = function() {
+  if (document.readyState != 'complete') {
+      if (navigator.userAgent.toLowerCase().indexOf('msie') > 0)
+        jQuery(document).ready(iehandler);
+    else {
+      google.setOnLoadCallback(function() {
+        google.search.cse.element.render(
+        {
+          div: "search-result",
+          tag: 'search'
+        });
+      }, true);
+    }
+  }
+};
+function iehandler(jQuery) {
+  google.search.cse.element.render(
+    {
+      div: "search-result",
+      tag: 'search'
+    });
+};
+window.__gcse = {
+  parsetags: 'explicit',
+  callback: myCallback
+};
+(function() {
+  var cx = customSearchID;
+  var gcse = document.createElement('script'); gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+  '//www.google.com/cse/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
