@@ -18,10 +18,10 @@
 
 ### grunt task
 
-  $ grunt test
-  $ grunt dev
-  $ grunt build
-  $ grunt (default, watch)
+- grunt test
+- grunt dev
+- grunt build
+- grunt (default, watch)
 
 ## Live Demo
 
