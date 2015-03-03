@@ -24,6 +24,18 @@
 		<script async src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<link href="./images/ie.min.css?ver=4.0.0" rel="stylesheet">
 		<![endif]-->
+	<!-- Google Analytics Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46277559-1', 'yongwanee.com');
+	  ga('require', 'displayfeatures');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body class="drawer drawer-left drawer-navbar drawer-fixed">
 <s_t3>
@@ -46,15 +58,18 @@
 		<nav class="container drawer-nav" role="navigation">
 			<div class="drawer-brand"><a href="[##_blog_link_##]" rel="home">[##_title_##]</a></div>
 			<ul class="drawer-menu">
-				<li class="drawer-menu-item"><a href="/category">Archives</a></li>
-				<li class="drawer-menu-item"><a href="/tag">Tags</a></li>
-				<li class="drawer-menu-item"><a href="/guestbook">Guestbook</a></li>
-				<li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">admin <span class="caret"></span></a>
+				<li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">Archives <span class="caret"></span></a>
 					<ul class="drawer-submenu dropdown-menu" role="menu">
-						<li class="drawer-submenu-item"><a href="/admin">관리자</a></li>
-						<li class="drawer-submenu-item"><a href="/admin/entry/post">글쓰기</a></li>
+						<li class="drawer-submenu-item"><a href="/category">전체</a></li>
+						<li class="drawer-submenu-item"><a href="/category/밴쿠버">밴쿠버</a></li>
+						<li class="drawer-submenu-item"><a href="/category/여행">여행</a></li>
+						<li class="drawer-submenu-item"><a href="/category/IT">IT</a></li>
+						<li class="drawer-submenu-item"><a href="/category/노래">노래</a></li>
 					</ul>
 				</li>
+				<li class="drawer-menu-item"><a href="/tag">Tags</a></li>
+				<li class="drawer-menu-item"><a href="/guestbook">Guestbook</a></li>
+				
 			</ul>
 			<form action="javascript:searchURL()" class="drawer-form drawer-form-right" role="search">
 				<label class="sr-only">search</label>
@@ -76,7 +91,7 @@
 <!-- Cover
 ================================================== -->
 <div class="row col-nospace cover">
-	<div class="col-sm-12">
+	<div class="col-sm-12" style="display:none">
 		<div id="coverCarousel" class="cover_carousel slide">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -498,7 +513,7 @@
 	<s_sidebar_element>
 	<!-- Article(default) -->
 	<div class="widget">
-		<h3>Articles(default)</h3>
+		<h3>Articles</h3>
 			<ul>
 				<s_rctps_rep>
 				<li>
@@ -566,6 +581,28 @@
 		</div>
 	</div>
 	</s_sidebar_element>
+	
+	<s_sidebar_element>
+	<!-- Ads -->
+	<div class="widget">
+		<div class="widget-inline-inner">
+			<ul>
+				<li>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Sidebar Responsive -->
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-ad-client="ca-pub-3887691839665321"
+					 data-ad-slot="1051382299"
+					 data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Links -->
@@ -598,16 +635,41 @@
 
 <footer role="contentinfo">
 <div class="container footer">
+	<!-- Google Banner Ad -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Footer Responsive -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-3887691839665321"
+		 data-ad-slot="5702885895"
+		 data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 	<div class="source-org vcard copyright">
 		<ul>
 			<li>Copyright &copy; 2015 <a class="org fn url" href="[##_blog_link_##]" target="_blank">[##_title_##]</a> All rights reserved.</li>
-			<li>Code Is Content by <a href="http://markquery.com/" target="_blank">마크쿼리</a> &middot; <a rel="license" href="http://markquery.com/license/" target="_blank">License</a></li>
+			<li><a title="guestbook" href="[##_guestbook_link_##]">Guestbook</a></li>
+			<li><a title="admin" href="[##_owner_url_##]">Admin</a></li>
+			<li>Total : [##_count_total_##]</li>
+			<li>Today : [##_count_today_##]</li>
+			<li>Yesterday : [##_count_yesterday_##]</li>
+		</ul>
+		<!-- MARKQUERY AND OPENSOURCES LICENSE -->
+		<ul>
+			<li>Code Is Content by <a href="http://markquery.com/" target="_blank">마크쿼리</a></li>
+			<li class="text-muted">&middot;</li>
+			<li><a rel="license" href="http://markquery.github.io/license/" target="_blank">License</a></li> 
+			<li class="text-muted">&middot;</li>
 			<li>Powered by <a href="http://tistory.com/" target="_blank">Tistory</a></li>
+			<li class="text-muted">&middot;</li>
+			<li>DNS Service by <a href="http://www.dnsever.com" target="dnsever"><img src="http://banner.dnsever.com/dnsever-banner_80x16.gif" border="0" alt="DNS server, DNS service" style="vertical-align: top"></a></li>
 		</ul>
 	</div>
 </div>
 </footer>
 
+<!--
 <div class="container build">
 	<div class="row col-nospace">
 		<div class="col-sm-12">
@@ -615,6 +677,7 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- jQuery -->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
